@@ -2,7 +2,7 @@ class AnswersController < ApplicationController
     #回答登録
     def create
         @question = Question.find(params[:question_id])
-        @answer = @question.answers.create(answer_params)
+        @question.answers.create(answer_params)
         redirect_to question_path(@question)
     end
 
@@ -10,6 +10,11 @@ class AnswersController < ApplicationController
         @question = Question.find(params[:question_id])
         @answer = @question.answers.find(params[:id])
         @answer.destroy
-        redirect_to question_path(@question)
+        redirect_to @question, status: :see_other
+    end
+
+    private
+    def answer_params
+        params.require(:answer).permit(:name, :content)
     end
 end
