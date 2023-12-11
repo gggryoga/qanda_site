@@ -1,0 +1,16 @@
+h1 {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    margin-left: auto;
+    font-size: 40px;
+    border-bottom: 1px solid #eee;
+    color: red;
+}
+
+tr {
+    padding-left: 1000px;
+    text-align: center;
+    margin-left: 100px;
+    border-bottom: 1px solid #eee;
+    max-width: fit-content;
+}
