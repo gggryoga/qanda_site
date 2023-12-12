@@ -26,22 +26,24 @@
 # <%= link_to 'destroy', question_answer_path(@question, answer), data: { turbo_method: "delete", turbo_confirm: 'Are you sure?' } %>
 <% end %>
 
-
-
 <h2>add a answer</h2>
-<%= form_with(model: [@question, @question.answers.build]) do |form| %>
-  
+<%= form_with(model: [@question, @question.answers.build]) do |form| %> 
     <div>
         <%= form.label :name %><br>
         <%= form.text_field :name %>
     </div>
     <div>
-        <%= form.label :content %><br>
-        <%= form.text_area :content %>
+    <%= form.label :content %><br>
+    <%= form.text_area :content %>
     </div>
     <div>
-        <%= form.submit %>
+    <%= form.submit %>
     </div>
+    <style>
+        div {
+            text-align: center;
+        }
+    </style>
 <% end %>
 
 <%= link_to 'edit', edit_question_path(@question) %>

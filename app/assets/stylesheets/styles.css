@@ -5,12 +5,43 @@ h1 {
     font-size: 40px;
     border-bottom: 1px solid #eee;
     color: red;
+    text-transform: uppercase; /* 追加 */
+    font-family: 'Arial', sans-serif; /* 追加 */
 }
 
-tr {
-    padding-left: 1000px;
-    text-align: center;
-    margin-left: 100px;
+/* 他の要素のスタイルも追加 */
+
+h1 {
+    font-size: 40px;
+    text-transform: uppercase;
     border-bottom: 1px solid #eee;
-    max-width: fit-content;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    text-align: center; /* 追加 */
 }
+
+table {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    margin-left: 320px;
+    /* text-align: center;  */
+ 
+}
+
+/* 他のスタイルを省略 */
+.new-question-link {
+    float: right; /* 追加 */
+}
+
+/* 他のスタイルを省略 */
+p {
+    text-align: center; /* 追加 */
+    margin-bottom: 1em; /* 追加 */
+}
+
+h2 {
+    text-align: center; /* 追加 */
+    margin-bottom: 1em; /* 追加 */
+}
+
